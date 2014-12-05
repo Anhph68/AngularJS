@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <!--Dữ liệu nhập ở ô textbox ng-model= sẽ được bind với the có thuộc tính ng-bind-->
+        <p>Name: <input type="text" ng-model="name"/></p>
+
+        <p ng-bind="name"></p>
+    </div>
+</body>
+</html>

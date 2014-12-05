@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+<!--The ng-disabled directive binds AngularJS application data to the disabled attribute of HTML elements.-->
+<!--The ng-disabled directive binds the application data mySwitch to the HTML button's disabled attribute.-->
+<div ng-app="" ng-init="mySwitch = true">
+    <p><button ng-disabled="mySwitch">Click me!</button></p>
+    <!--The ng-model directive binds the value of the HTML checkbox element to the value of mySwitch.-->
+    <p><input type="checkbox" ng-model="mySwitch"/> Button</p>
+    <p>{{mySwitch}}</p>
+</div>
+</body>
+</html>

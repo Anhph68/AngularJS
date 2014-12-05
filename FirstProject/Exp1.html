@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+<body>
+<!--Using ng-init is not very common. You will learn a better way to initialize data in the chapter about controllers.-->
+<!--Numbers-->
+<!--<div id="app1" ng-app="app1" ng-init="quantity=1; cost=5">-->
+    <!--<p>Total in dollar: {{quantity * cost}}</p>-->
+    <!--&lt;!&ndash;Same way&ndash;&gt;-->
+    <!--<p>Total in dollar: <span ng-bind="quantity*cost"></span></p>-->
+<!--</div>-->
+
+<!--Strings-->
+<!--<div ng-app="" ng-init="firstName = 'Anh'; lastName = 'Pham'" >-->
+    <!--<p>The name is: {{firstName + " " + lastName}}</p>-->
+<!--</div>-->
+
+<!--Objects-->
+<!--<div ng-app="" ng-init="person={firstName: 'Anh', lastName: 'Pham'}">-->
+    <!--<p>The name is: {{person.firstName}}</p>-->
+    <!--<p>The name is: <span ng-bind="person.firstName"></span></p>-->
+<!--</div>-->
+
+<!--Arrays-->
+<div ng-app="" ng-init="points = [1,15, 19, 2, 40]">
+    <p>The points are {{points[2]}}</p>
+</div>
+</body>
+</html>
