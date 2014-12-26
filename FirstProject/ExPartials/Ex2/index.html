@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../js/angular.js"></script>
+    <script src="../../js/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="MyApp">
+    <div ng-controller="MainCtrl">
+        Choose:
+        <a href="#Book/Mody">Mody</a> |
+        <a href="#Book/Mody/ch/1">Mody: Chap1</a> |
+        <a href="#Book/Gasby">Gasby</a> |
+        <a href="#Book/Gasby/ch/4?key=value">Gasby: Chap4</a> |
+        <a href="#Book/Scarlet">Scarlet</a> |
+        <div ng-view></div>
+        <hr/>
+        <pre>$location.path() = {{$location.path()}}</pre>
+        <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+        <pre>$route.current.params = {{$route.current.params}}</pre>
+        <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+        <pre>$routeParams = {{$routeParams}}</pre>
+    </div>
+
+</body>
+</html>
